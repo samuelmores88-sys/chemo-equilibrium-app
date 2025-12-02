@@ -87,11 +87,14 @@ if st.button("Run Simulation"):
     ax3.set_title(f"Heatmap: Final Tumor Density after {cycles} cycles")
     st.pyplot(fig3)
 
-# Add footer with author name
+# Add footer with author name in sidebar
 st.markdown("---")
 st.markdown(
-    "<div style='position: fixed; bottom: 10px; right: 10px; font-size: 12px; color: gray;'>"
-    "Durga Rao Pathuri"
-    "</div>",
+    """
+    <div style='text-align: center; padding: 20px; font-size: 12px; color: #888; margin-top: 50px;'>
+        <p><strong>Durga Rao Pathuri</strong></p>
+        <p>Chemotherapy Equilibrium Model - Advanced Analysis</p>
+    </div>
+    """,
     unsafe_allow_html=True
 )
