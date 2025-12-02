@@ -90,9 +90,10 @@ if st.button("Run Simulation"):
 # Add footer with author name
 st.markdown("---")
 st.markdown(
-"<div style='position: fixed; bottom: 10px; right: 10px; font-size: 12px; color: gray;'>"
+"<div style='position: fixed; bottom: 10px; left: 10px; font-size: 12px; color: gray;'>"
 "Durga Rao Pathuri"
 "</div>",
 unsafe_allow_html=True
 )
+
 
