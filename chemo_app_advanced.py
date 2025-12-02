@@ -27,7 +27,7 @@ beta = st.number_input("Drug retention (beta)", value=0.5)
 gamma = st.number_input("Feedback parameter (gamma)", value=0.7)
 n0 = st.number_input("Initial tumor cell density (n0)", value=0.5)
 D0 = st.number_input("Initial drug level (D0)", value=1.0)
-cycles = st.slider("Number of chemotherapy cycles", 5, 60, 30)
+cycles = st.slider("Number of chemotherapy cycles", 5, 60, 8)
 
 if st.button("Run Simulation"):
     df_equilibrium = chemoequilibrium(r, K, alpha, beta, gamma, n0, D0, cycles)
@@ -95,6 +95,7 @@ st.markdown(
 "</div>",
 unsafe_allow_html=True
 )
+
 
 
 
