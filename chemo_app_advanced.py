@@ -24,7 +24,7 @@ r = st.number_input("Tumor growth rate (r)", value=0.2)
 K = st.number_input("Carrying capacity (K)", value=1.0)
 alpha = st.number_input("Drug cytotoxicity (alpha)", value=0.7)
 beta = st.number_input("Drug retention (beta)", value=0.5)
-gamma = st.number_input("Feedback parameter (gamma)", value=0.1)
+gamma = st.number_input("Feedback parameter (gamma)", value=0.7)
 n0 = st.number_input("Initial tumor cell density (n0)", value=0.5)
 D0 = st.number_input("Initial drug level (D0)", value=1.0)
 cycles = st.slider("Number of chemotherapy cycles", 5, 60, 30)
@@ -95,5 +95,6 @@ st.markdown(
 "</div>",
 unsafe_allow_html=True
 )
+
 
 
